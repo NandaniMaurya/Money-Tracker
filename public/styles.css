@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    background-color: #060632c9; /* Dark blue background for a modern look */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin: 0;
+    color: #e0e0e0; /* Light gray text for good contrast */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f5f5f5; /* Lighter text color for headings */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Input section styles */
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.input-section label {
+    font-weight: 500;
+    margin-right: 10px;
+    color: #e0e0e0;
+}
+
+.input-section input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #393e46; /* Subtle border color */
+    border-radius: 4px;
+    width: 200px;
+    background-color: #222831; /* Dark background for input fields */
+    color: #eeeeee; /* Light text in input fields */
+}
+
+.input-section button {
+    padding: 8px 16px;
+    background-color: #00adb5; /* Attractive cyan button color */
+    color: #222831; /* Dark text on button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #007b7f; /* Darker cyan on hover */
+}
+
+/* Expenses list styles */
+.expenses-list {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+th, td {
+    border: 1px solid #393e46;
+    padding: 12px;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+th {
+    background-color: #00adb5; /* Consistent with button color */
+    color: #222831;
+    font-weight: 600;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+/* Delete button styles */
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #e33535;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #b02a2a;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-section input,
+    .input-section button {
+        margin-top: 10px;
+    }
+}
